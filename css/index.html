@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<a href="images/download.png">click here</a>
+<a onclick="doAlert(5)" href="images/download.png">click here</a>
 <br>
-<a href="images/hello.jpg">click here</a>
+<a onclick="doAlert(5)" href="images/hello.jpg">click here</a>
     <h1 id="first_h1">HTML <span>Element</span></h1>
     <h2 class="first_h2">what is HTML</h2>
     <P>Hypertext Markup Language (HTML)
@@ -80,7 +80,15 @@
         </ul>
     </ol>
     <h1>Bye</h1>
-
+<script type="text/javascript">
+    function doAlert(text)
+    {
+        var x;
+        x = 'aloo'  + text;
+        alert(x);
+        alert(typeof (x))
+    }
+</script>
 
 </body>
 </html>
